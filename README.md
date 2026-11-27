@@ -16,6 +16,8 @@ Open the project in **Unity 6000.3.24f1**, open `Assets/Scenes/Level01.unity` an
 | 4 — Survival Workshop | Survive 30 seconds inside the teal arena, then reach the exit. | Crusher, sliding spikes, arena spikes and a faster guard. Coins are bonuses. | 2 |
 | 5 — Final Escape | Collect 10 coins and reach the exit within 90 seconds. | Mixed hazards, the fastest guard, two speed potions and a final gap. | 2 |
 
+Screenshots: [Level 1](Docs/level01.png) · [Level 2](Docs/level02.png) · [Level 3](Docs/level03.png) · [Level 4](Docs/level04.png) · [Level 5](Docs/level05.png).
+
 The survival clock pauses outside the arena and resets when a life is lost. Countdown timers continue during respawn. Restart resets the level's timer, coins, hearts and lives.
 
 ## Gameplay
