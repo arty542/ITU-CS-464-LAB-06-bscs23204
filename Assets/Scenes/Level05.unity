@@ -309,7 +309,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7075310869569618745, guid: 8e9e3ee186d10a24f9ee08eea1873f6b, type: 3}
       propertyPath: lesson
-      value: 10 COINS / 90 SECONDS / TWO LIVES
+      value: 10 COINS / 25 SECONDS / TWO LIVES
       objectReference: {fileID: 0}
     - target: {fileID: 7075310869569618745, guid: 8e9e3ee186d10a24f9ee08eea1873f6b, type: 3}
       propertyPath: player
@@ -341,7 +341,7 @@ PrefabInstance:
       objectReference: {fileID: 1473442140}
     - target: {fileID: 7075310869569618745, guid: 8e9e3ee186d10a24f9ee08eea1873f6b, type: 3}
       propertyPath: objective
-      value: Collect 10 coins and reach FINISH within 90 seconds. Use the speed potions.
+      value: Collect 10 coins and reach FINISH within 25 seconds. Use the speed potions.
       objectReference: {fileID: 0}
     - target: {fileID: 7075310869569618745, guid: 8e9e3ee186d10a24f9ee08eea1873f6b, type: 3}
       propertyPath: scoreText
@@ -349,7 +349,7 @@ PrefabInstance:
       objectReference: {fileID: 136927944}
     - target: {fileID: 7075310869569618745, guid: 8e9e3ee186d10a24f9ee08eea1873f6b, type: 3}
       propertyPath: timeLimit
-      value: 90
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7075310869569618745, guid: 8e9e3ee186d10a24f9ee08eea1873f6b, type: 3}
       propertyPath: timerText
@@ -625,7 +625,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '05 / FINAL ESCAPE
 
-    10 COINS. 90 SECONDS. TWO LIVES.'
+    10 COINS. 25 SECONDS. TWO LIVES.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -847,11 +847,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1608877393997745423, guid: 2b1f666d29c082a449758e129cf6e724, type: 3}
       propertyPath: m_text
-      value: 10 COINS / 90 SECONDS / TWO LIVES
+      value: 10 COINS / 25 SECONDS / TWO LIVES
       objectReference: {fileID: 0}
     - target: {fileID: 2181535531775306547, guid: 2b1f666d29c082a449758e129cf6e724, type: 3}
       propertyPath: m_text
-      value: Collect 10 coins and reach FINISH within 90 seconds. Use the speed potions.
+      value: Collect 10 coins and reach FINISH within 25 seconds. Use the speed potions.
       objectReference: {fileID: 0}
     - target: {fileID: 3866242039854843992, guid: 2b1f666d29c082a449758e129cf6e724, type: 3}
       propertyPath: m_fontColor32.rgba
@@ -859,7 +859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5276066547179220087, guid: 2b1f666d29c082a449758e129cf6e724, type: 3}
       propertyPath: m_text
-      value: TIME  01:30
+      value: TIME  00:25
       objectReference: {fileID: 0}
     - target: {fileID: 5276066547179220087, guid: 2b1f666d29c082a449758e129cf6e724, type: 3}
       propertyPath: m_fontColor32.rgba

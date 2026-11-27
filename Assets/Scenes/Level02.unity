@@ -343,7 +343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7075310869569618745, guid: 8e9e3ee186d10a24f9ee08eea1873f6b, type: 3}
       propertyPath: lesson
-      value: 60 SECOND ESCAPE / SPIKES
+      value: 20 SECOND ESCAPE / SPIKES
       objectReference: {fileID: 0}
     - target: {fileID: 7075310869569618745, guid: 8e9e3ee186d10a24f9ee08eea1873f6b, type: 3}
       propertyPath: player
@@ -375,12 +375,16 @@ PrefabInstance:
       objectReference: {fileID: 1783774468}
     - target: {fileID: 7075310869569618745, guid: 8e9e3ee186d10a24f9ee08eea1873f6b, type: 3}
       propertyPath: objective
-      value: Reach FINISH before the 60-second countdown ends. Coins are optional.
+      value: Reach FINISH before the 20-second countdown ends. Coins are optional.
       objectReference: {fileID: 0}
     - target: {fileID: 7075310869569618745, guid: 8e9e3ee186d10a24f9ee08eea1873f6b, type: 3}
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 136927944}
+    - target: {fileID: 7075310869569618745, guid: 8e9e3ee186d10a24f9ee08eea1873f6b, type: 3}
+      propertyPath: timeLimit
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7075310869569618745, guid: 8e9e3ee186d10a24f9ee08eea1873f6b, type: 3}
       propertyPath: timerText
       value: 
@@ -597,11 +601,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1608877393997745423, guid: 2b1f666d29c082a449758e129cf6e724, type: 3}
       propertyPath: m_text
-      value: 60 SECOND ESCAPE / SPIKES
+      value: 20 SECOND ESCAPE / SPIKES
       objectReference: {fileID: 0}
     - target: {fileID: 2181535531775306547, guid: 2b1f666d29c082a449758e129cf6e724, type: 3}
       propertyPath: m_text
-      value: Reach FINISH before the 60-second countdown ends. Coins are optional.
+      value: Reach FINISH before the 20-second countdown ends. Coins are optional.
       objectReference: {fileID: 0}
     - target: {fileID: 3866242039854843992, guid: 2b1f666d29c082a449758e129cf6e724, type: 3}
       propertyPath: m_fontColor32.rgba
@@ -609,7 +613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5276066547179220087, guid: 2b1f666d29c082a449758e129cf6e724, type: 3}
       propertyPath: m_text
-      value: TIME  01:00
+      value: TIME  00:20
       objectReference: {fileID: 0}
     - target: {fileID: 5276066547179220087, guid: 2b1f666d29c082a449758e129cf6e724, type: 3}
       propertyPath: m_fontColor32.rgba
@@ -5052,7 +5056,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '02 / TIMED ESCAPE
 
-    REACH THE EXIT IN 60 SECONDS'
+    REACH THE EXIT IN 20 SECONDS'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

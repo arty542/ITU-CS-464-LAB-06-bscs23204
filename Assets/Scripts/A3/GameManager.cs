@@ -71,7 +71,7 @@ namespace CS464.A3
         private bool UsesCoins => objectiveType == LevelObjective.CoinTarget ||
             objectiveType == LevelObjective.CollectAll || objectiveType == LevelObjective.TimedCollect;
         private bool IsTimed => objectiveType == LevelObjective.TimedEscape ||
-            objectiveType == LevelObjective.TimedCollect;
+            objectiveType == LevelObjective.TimedCollect || objectiveType == LevelObjective.Survive;
         private bool ObjectiveComplete => (!UsesCoins || score >= targetScore) &&
             (objectiveType != LevelObjective.Survive || survivalElapsed >= survivalDuration);
 
@@ -270,15 +270,19 @@ namespace CS464.A3
         {
             if (timerText == null) return;
             string label;
-            if (IsTimed)
+            if (objectiveType == LevelObjective.Survive)
+            {
+                int seconds = Mathf.CeilToInt(remainingTime);
+                string task = survivalElapsed >= survivalDuration ? "REACH EXIT"
+                    : insideSurvivalArea ? $"SURVIVE {Mathf.CeilToInt(survivalDuration - survivalElapsed)}s"
+                    : $"ENTER ARENA ({Mathf.CeilToInt(survivalDuration - survivalElapsed)}s)";
+                label = $"TIME {seconds / 60:00}:{seconds % 60:00} / {task}";
+            }
+            else if (IsTimed)
             {
                 int seconds = Mathf.CeilToInt(remainingTime);
                 label = $"TIME  {seconds / 60:00}:{seconds % 60:00}";
             }
-            else if (objectiveType == LevelObjective.Survive)
-                label = survivalElapsed >= survivalDuration ? "ARENA CLEARED"
-                    : $"SURVIVE  {Mathf.CeilToInt(survivalDuration - survivalElapsed)}s" +
-                        (insideSurvivalArea ? "" : " / ENTER ARENA");
             else label = objectiveType == LevelObjective.CollectAll ? "COLLECT EVERY COIN" : $"COLLECT {targetScore} + EXIT";
             if (label == lastTimerLabel) return;
             timerText.text = label;
